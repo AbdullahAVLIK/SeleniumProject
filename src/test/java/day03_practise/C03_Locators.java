@@ -67,8 +67,10 @@ public class C03_Locators {
         List<WebElement> linklerListesi = driver.findElements(By.tagName("a"));
         System.out.println("linklerListesi.size() = " + linklerListesi.size());
         //4. linkleri yazdirin;
+        int sira =1;
         for (WebElement each : linklerListesi){
-            System.out.println("linkler listesi :"+each.getText()+" ");
+            System.out.println("linkler listesi"+sira+" :"+each.getText()+" ");
+            sira++;
         }
         System.out.println();
         //Lambda ile yazdırın:
